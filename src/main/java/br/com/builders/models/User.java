@@ -24,6 +24,8 @@ public class User {
 	private Integer age;
 	private Boolean active;
 	
+	public User() {}
+	
 	public User(Date dateCreated, String name, Integer age, Boolean active) {
 		super();
 		this.dateCreated = dateCreated;

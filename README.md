@@ -1,6 +1,6 @@
-# CRUD Spring 
+# Rest API de Clientes - Java Spring Boot 
 
-Rest API de Clientes, utilizando Java, Docker, Spring, Mysql
+API de Clientes, utilizando Java, Docker, Spring, Mysql
 
 - criação de novos clientes;
 - atualização de clientes existentes;
@@ -21,7 +21,7 @@ Rest API de Clientes, utilizando Java, Docker, Spring, Mysql
 
 - Inicialize os tests rodando o commando abaixo 
 ````
-.\mvnw spring-boot:run
+.\mvnw test
 ````
 
 ## Executando 

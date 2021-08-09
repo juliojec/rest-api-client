@@ -35,5 +35,5 @@ API de Clientes, utilizando Java, Docker, Spring, Mysql
 
 Acesse o navegador no link abaixo
 ````
-http://localhost:8080/swagger-ui.html#/user-resource
+http://localhost:8080/swagger-ui.html
 ````

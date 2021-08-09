@@ -2,12 +2,12 @@
 
 API de Clientes, utilizando Java, Docker, Spring, Mysql
 
-- criação de novos clientes;
-- atualização de clientes existentes;
+- criaÃ§Ã£o de novos clientes;
+- atualizaÃ§Ã£o de clientes existentes;
 - lista os clientes de forma paginada;
 - Permite busca por id e nome do cliente;
 
-## Pré requisitos
+## PrÃ© requisitos
 
 - Maven 3+
 - Java 8+
@@ -31,9 +31,9 @@ API de Clientes, utilizando Java, Docker, Spring, Mysql
 .\mvnw spring-boot:run
 ````
 
-## Documentação - Swagger 
+## DocumentaÃ§Ã£o - Swagger 
 
 Acesse o navegador no link abaixo
 ````
-http://localhost:8080/swagger-ui.html#/user-resource
+http://localhost:8080/swagger-ui.html
 ````

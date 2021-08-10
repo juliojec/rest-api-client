@@ -2,12 +2,12 @@
 
 API de Clientes, utilizando Java, Docker, Spring, Mysql
 
-- criação de novos clientes;
-- atualização de clientes existentes;
+- criaÃ§Ã£o de novos clientes;
+- atualizaÃ§Ã£o de clientes existentes;
 - lista os clientes de forma paginada;
 - Permite busca por id e nome do cliente;
 
-## Pré requisitos
+## PrÃ© requisitos
 
 - Maven 3+
 - Java 8+
@@ -15,7 +15,7 @@ API de Clientes, utilizando Java, Docker, Spring, Mysql
 
 ## Preparando ambiente
 
-- Dentro da pasta principal, execute o `docker-compose up` para inicializar o mysql.
+- Dentro da pasta principal, execute o `docker-compose up` para inicializar o backend java 11 + mysql 5.7
 
 ## Tests de Unidade
 
@@ -24,14 +24,7 @@ API de Clientes, utilizando Java, Docker, Spring, Mysql
 .\mvnw test
 ````
 
-## Executando 
-
-- Inicialize o projeto 
-````
-.\mvnw spring-boot:run
-````
-
-## Documentação - Swagger 
+## DocumentaÃ§Ã£o - Swagger 
 
 Acesse o navegador no link abaixo
 ````

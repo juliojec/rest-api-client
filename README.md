@@ -15,7 +15,10 @@ API de Clientes, utilizando Java, Docker, Spring, Mysql
 
 ## Preparando ambiente
 
-- Dentro da pasta principal, execute o `docker-compose up` para inicializar o backend java 11 + mysql 5.7
+- Dentro da pasta principal, execute o comando abaixo para inicializar o backend java 11 + mysql 5.7
+````
+docker-compose up
+````
 
 ## Tests de Unidade
 

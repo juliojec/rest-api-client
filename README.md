@@ -10,7 +10,7 @@ API de Clientes, utilizando Java, Docker, Spring, Mysql
 ## Pré requisitos
 
 - Maven 3+
-- Java 8+
+- Java 11
 - Docker 18.02.0+ 
 
 ## Preparando ambiente

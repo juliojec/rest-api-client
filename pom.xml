@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com</groupId>
-	<artifactId>builders</artifactId>
+	<artifactId>jc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>builders</name>
-	<description>Builders Project Java Spring Boot</description>
+	<name>jc</name>
+	<description>JC Project Java Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

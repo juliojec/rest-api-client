@@ -1,4 +1,4 @@
-package br.com.builders.config;
+package br.com.jc.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -33,7 +33,7 @@ public class SwaggerConfig implements WebMvcConfigurer {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(getApiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("br.com.builders.resources"))
+                .apis(RequestHandlerSelectors.basePackage("br.com.jc.controllers"))
                 .paths(PathSelectors.any())
                 .build();
     }

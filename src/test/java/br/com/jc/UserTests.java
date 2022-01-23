@@ -1,4 +1,4 @@
-package br.com.builders;
+package br.com.jc;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.times;
@@ -18,9 +18,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 
-import br.com.builders.models.User;
-import br.com.builders.repositories.UserRepository;
-import br.com.builders.services.UserService;
+import br.com.jc.models.User;
+import br.com.jc.repositories.UserRepository;
+import br.com.jc.services.UserService;
 
 @SpringBootTest
 public class UserTests {

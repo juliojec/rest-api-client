@@ -1,13 +1,13 @@
-package br.com.builders;
+package br.com.jc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BuildersApplication {
+public class JcApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BuildersApplication.class, args);
+		SpringApplication.run(JcApplication.class, args);
 	}
 
 }

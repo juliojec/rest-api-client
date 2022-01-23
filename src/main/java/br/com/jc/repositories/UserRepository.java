@@ -1,10 +1,10 @@
-package br.com.builders.repositories;
+package br.com.jc.repositories;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import br.com.builders.models.User;
+import br.com.jc.models.User;
 
 public interface UserRepository extends JpaRepository<User, Integer> {
 

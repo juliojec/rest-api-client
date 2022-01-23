@@ -1,7 +1,6 @@
-package br.com.builders.resources;
+package br.com.jc.controllers;
 
 import java.util.Date;
-import java.util.Optional;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -20,26 +19,28 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.builders.models.User;
-import br.com.builders.services.UserService;
+import br.com.jc.models.User;
+import br.com.jc.services.UserService;
 
 @RestController
 @RequestMapping("/users")
-public class UserResource {
+public class UserController {
 
 	@Autowired
 	private UserService userService;
 
 	@GetMapping("/{id}")
 	public ResponseEntity<User> finById(@PathVariable Integer id) {
-		Optional<User> user = userService.findById(id);
-		return user.isPresent() ? ResponseEntity.ok(user.get()) : ResponseEntity.notFound().build();
+		return userService.findById(id)
+				.map(ResponseEntity::ok)
+				.orElse(ResponseEntity.badRequest().build());
 	}
 	
-	@GetMapping("/{name}")
+	@GetMapping("/name/{name}")
 	public ResponseEntity<User> finByName(@PathVariable String name) {
-		Optional<User> user = userService.findByName(name);
-		return user.isPresent() ? ResponseEntity.ok(user.get()) : ResponseEntity.notFound().build();
+		return userService.findByName(name)
+				.map(ResponseEntity::ok)
+				.orElse(ResponseEntity.badRequest().build());
 	}
 	
 	@GetMapping("/{pageNumber}/{pageSize}")
@@ -63,12 +64,8 @@ public class UserResource {
 
 	@PutMapping
 	public ResponseEntity<User> update(@RequestBody User user) {
-		try {
-			User userSave = userService.save(user);
-			return ResponseEntity.ok(userSave);
-		} catch (IllegalArgumentException e) {
-			return ResponseEntity.notFound().build();
-		}
+		User userSave = userService.save(user);
+		return ResponseEntity.ok(userSave);
 	}
-
+	
 }

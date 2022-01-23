@@ -1,4 +1,4 @@
-package br.com.builders.services;
+package br.com.jc.services;
 
 import java.util.Optional;
 
@@ -7,8 +7,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
-import br.com.builders.models.User;
-import br.com.builders.repositories.UserRepository;
+import br.com.jc.models.User;
+import br.com.jc.repositories.UserRepository;
 
 @Service
 public class UserService {

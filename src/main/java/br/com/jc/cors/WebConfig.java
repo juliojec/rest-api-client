@@ -1,4 +1,4 @@
-package br.com.builders.cors;
+package br.com.jc.cors;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
